@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: <a href='#'>Aspiring Aerospace Engineer</a>. Currently seeking an internship.
 
