@@ -1,80 +1,90 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
+title: Partial State Gaussian Mixture Fusion
+description: Multi-sensor probabilistic fusion using Gaussian mixture models
+img: assets/img/18.jpg
 importance: 3
-category: fun
+category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Technical Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+This project focused on the **design and implementation of a Gaussian Mixture Model (GMM)–based fusion framework** for combining uncertain information from multiple sensors or estimators. The goal was to move beyond single-Gaussian assumptions and enable **robust probabilistic fusion** in the presence of multi-modal, non-Gaussian uncertainty.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The work emphasized mathematical correctness, numerical stability, and practical applicability to robotics and estimation problems where classical Kalman-style fusion doesn't work. In this project, which is currently in progress, I am sharpening my python skills by writiing 15 different inter-related python programs based on Matlab counterparts. This is allowing me to get a lot of python experience, which I was lacking before beyond a basic level.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+Status: **In Progress**, to be completed in the near future.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+---
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Problem Motivation
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Many real-world estimation problems produce **multi-modal belief distributions**, including:
+- Ambiguous or incorrect data association
+- Symmetric or repetitive environments
+- Partial observability
+- Conflicting or intermittent sensor measurements
 
-{% raw %}
+Standard Gaussian fusion techniques collapse uncertainty into a single mean and covariance, which can:
+- Eliminate valid competing hypotheses
+- Produce overconfident estimates
+- Cause estimator divergence when assumptions are violated
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+Gaussian mixture fusion preserves **multiple hypotheses simultaneously**, allowing estimators to reason explicitly about ambiguity.
 
-{% endraw %}
+---
+
+## Gaussian Mixture Representation
+
+System beliefs are represented as **weighted Gaussian components**:
+- Each component represents a local hypothesis with its own mean and covariance
+- Weights encode the relative likelihood of each hypothesis
+- The full belief is the normalized weighted sum of all components
+
+This representation allows the estimator to maintain multiple plausible states instead of prematurely committing to a single estimate.
+
+---
+
+## Fusion Methodology
+
+Fusion between two Gaussian mixtures is performed by:
+1. **Pairwise fusion** of components from each mixture
+2. Computing fused means and covariances using probabilistic update rules
+3. Updating component weights based on mutual consistency and likelihood
+4. Normalizing weights to maintain a valid probability distribution
+
+The resulting mixture explicitly encodes all plausible joint hypotheses, at the cost of increased mixture size.
+
+---
+
+## Mixture Management and Reduction
+
+Because naive fusion causes exponential growth in the number of mixture components, the project implemented **mixture management techniques** to maintain computational tractability:
+
+- **Weight pruning** to remove negligible components
+- **Component merging** based on statistical distance metrics
+- **Covariance-aware clustering** to preserve uncertainty structure during reduction
+
+These methods balance representational fidelity against runtime and memory constraints.
+
+---
+
+## Numerical Stability Considerations
+
+The implementation explicitly addressed numerical robustness:
+- Enforcing positive semi-definiteness of covariance matrices
+- Performing weight calculations in the log domain to avoid underflow
+- Careful normalization during fusion and pruning
+- Stable matrix operations during component merging
+
+These safeguards are critical to prevent estimator collapse or artificial overconfidence.
+
+---
+
+## Applications
+
+The Gaussian mixture fusion framework is well-suited for:
+- Multi-sensor state estimation
+- Tracking under ambiguous or intermittent measurements
+- Probabilistic robotics and SLAM
+- Target tracking with cluttered observations

@@ -10,10 +10,10 @@ related_publications: false
 
 ## Project Overview
 
-This project is a modular **Software Defined Vehicle (SDV)** developed for Komatsu’s Automation Center of Excellence (ACoE) as part of the *Tanki III DUPLO Project*.  
+This project is a modular **Software Defined Vehicle (SDV)** developed for Komatsu’s Automation R&D department as part of the *"Tanki III DUPLO Project"*.  
 The goal was to create a **reconfigurable, sensor-rich testbed** that could support a wide range of automation R&D efforts, including hardware validation, perception development, data collection, and early-stage autonomy prototyping.
 
-The platform is built on a drill automation mockup and intentionally designed to mirror real SDV constraints: distributed compute, heterogeneous sensors, nontrivial power systems, and field-deployable robustness. Rather than a one-off prototype, Tanki III was designed as a **repeatable architecture** that could evolve alongside future projects.
+The platform is built on a drill automation mockup and intentionally designed to mirror real SDV constraints: distributed compute, heterogeneous sensors, nontrivial power systems, and field-deployable robustness capable of being used and reconfigured for the groups's future projects.
 
 Role:  
 **Adam Aufderheide** – End-to-end design, layout, and implementation of the mechanical and electrical systems, including sensor mounting, power distribution, compute integration, and custom PCB design.
@@ -29,7 +29,7 @@ Status: **Complete**, demonstrated under self-powered operation with active sens
   </div>
 </div>
 <div class="caption">
-  Tanki III DUPLO platform before and after sensor, compute, and communication system integration.
+  Tanki III platform before and after sensor, compute, and communication system integration.
 </div>
 
 ---
@@ -53,8 +53,6 @@ The external sensor suite includes:
 
 Mounting solutions were selected based on functional requirements rather than uniformity.  
 High-heat or precision-critical components (notably the lidar units) were mounted using **1/16” bent steel sheet metal** to increase thermal conductivity and prevent deformation. Other components were mounted using **3D-printed fixtures**, enabling fast iteration at low cost.
-
-This approach allowed the platform to remain mechanically stable while still supporting ongoing experimental changes.
 
 <div class="row">
   <div class="col-sm mt-3 mt-md-0">

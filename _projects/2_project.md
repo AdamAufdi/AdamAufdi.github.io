@@ -2,10 +2,10 @@
 layout: page
 title: Automated Visual Navigation Testing Pipeline
 description: MATLAB–Python–Blender pipeline for rendering, data association, and evaluation of visual navigation algorithms
-img: assets/img/3.jpg
+img: assets/img/7.jpg
 importance: 2
 category: work
-giscus_comments: true
+#giscus_comments: true
 ---
 
 ## Project Overview
@@ -110,4 +110,4 @@ By automating image generation and data association, the pipeline enables deeper
 
 ## Outcome
 
-This project delivered a **fully automated, extensible testing pipeline** for visual navigation algorithms, bridging MATLAB-based estimation frameworks with modern rendering and computer vision tools. The system significantly reduces the barrier to large-scale testing and provides a flexible foundation for future research in autonomy, robotics, and aerospace navigation.
+This project delivered a **fully automated, extendable testing pipeline** for visual navigation algorithms, bridging MATLAB-based estimation frameworks with modern rendering and computer vision tools. The system significantly reduces the barrier to large-scale testing and provides a flexible foundation for future research in autonomy, robotics, and aerospace navigation.
