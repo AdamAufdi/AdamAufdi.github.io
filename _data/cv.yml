@@ -2,96 +2,113 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+      value: Adam Aufderheide
+    - name: Location
+      value: Mequon, WI 53092
+    - name: LinkedIn
+      value: www.linkedin.com/in/adam-aufderheide
+    - name: Website
+      value: https://adamaufdi.github.io
+    - name: Phone
+      value: 262-261-3875
+    - name: Email
+      value: adam.aufdi@gmail.com
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Bachelor of Science in Aeronautical and Astronautical Engineering
+      institution: Purdue University, West Lafayette, IN
+      year: Aug. 2023 - Dec. 2026
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - GPA: 3.50/4.00
 
-- title: Experience
+- title: Technical Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Undergraduate Research Assistant
+      institution: Purdue Department of Aeronautics and Astronautics
+      year: Nov. 2023 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Synthesized LROC image data in Blender to design a high-fidelity 3D model of the moon.
+        - Created an automated pipeline for testing visual navigation algorithms using MATLAB, Python, and Blender for image rendering.
+        - Simulated spacecraft landings to test vSLAM’s viability in instantaneously mapping extraterrestrial terrain.
+        - Utilized vSLAM technology by applying Python algorithms to localize the camera’s position and map landmark locations.
+        - Wrote partial state Gaussian mixture fusion algorithms for distributed navigation and tracking in Python.
+
+    - title: Automation Engineering Intern
+      institution: Komatsu Mining
+      year: May 2025 - Aug. 2025
       description:
-        - Description 1.
-        - Description 2.
+        - Carried out mechanical and electrical prototyping, design, fabrication, and testing of a modular sensor platform for a software-defined autonomous vehicle integrating radar, lidar, GPS, and camera systems.
+        - Engineered custom sensor mounts using bent steel and 3D printing to optimize field of view, thermal performance, and modularity.
+        - Designed and implemented a custom PCB to interface a motor controller, RC receiver, CAN network, and motor encoders.
+        - Developed and implemented the electrical system architecture, including power distribution, safety systems, and compute integration (Intel NUC, Nvidia Jetson), supporting a 680W load.
+        - Collaborated cross-functionally to validate hardware and ensure seamless integration with perception and autonomy stacks, delivering a fully functional testbed.
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+    - title: Design Engineer
+      institution: Purdue Space Program (Students for the Exploration and Development of Space)
+      year: Aug. 2023 - Present
       description:
+        - Worked on the liquid rocketry team to develop motor and fin support structures and the injector for a propulsion system.
+        - Used Finite Element Analysis to simulate stress/strain and create efficient pocketing patterns and weight distribution in CAD models of rocket parts.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Team Captain and Mechanical Design Lead
+      institution: FIRST Robotics Team 8680
+      year: Aug. 2019 - May 2023
+      description:
+        - Designed, modeled, and constructed prototypes, 3D models, and final iterations of complex mechanical systems to create functioning autonomous and driver-controlled robots, incorporating deadwheel odometry, sensors, motors, and servos.
+        - Placed third robot alliance at the 2023 World Championship; ranked seventh team in the all-time hall of fame; won dozens of competitions and awards.
+        - Managed 15 team members for multiple years and mentored 52 other students, building leadership skills.
+        - Secured roughly $100k in capital through corporate sponsorships/investors and built lasting relations with hundreds of businesses, teams, and individuals globally.
 
-- title: Open Source Projects
-  type: time_table
+- title: Relevant Coursework
+  type: list
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - Modern Vehicle Avionics
+    - Control System Analysis
+    - Air-Breathing Propulsion
+    - Spacecraft Attitude Dynamics
+    - Aerodynamics
+    - Thermal Sciences
+    - Structural Analysis
+    - Dynamics and Vibrations
+    - Introduction to Aerospace Design
+    - Aeromechanics I/II
+    - National Security and Defense
+    - Signal Analysis
+    - Thermodynamics
+    - Fluid Mechanics
+    - C Programming
 
-- title: Honors and Awards
-  type: time_table
+- title: Skills
+  type: list
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - Proficient in CAD modeling software: Solidworks, NX, Autodesk Inventor, Autodesk Fusion 360, and others
+    - Experienced in Finite Element Analysis (FEA) simulations
+    - Skilled in PLM/PDM workflows and technical writing standards
+    - Programming languages: MATLAB, Python, C; experienced with Git workflows
+    - Operate 3D printing, laser cutting, and CNC machines efficiently
+    - Familiar with manufacturing standards and techniques
+    - Experienced in electrical system design, circuitry, schematic reading/writing, and PCB design
+    - Problem solving, root-cause analysis, failure analysis, and iterative design
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Aerospace Engineering & Space Exploration
       items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+        - Rocket propulsion
+        - Spacecraft attitude dynamics and control systems
+        - Avionics and sensing
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Philosophy, theology, literature
+    - Politics
+    - History
+    - Science
+    - Language Learning
+    - Weight lifting, tennis
+    - Movies
