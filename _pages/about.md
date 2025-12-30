@@ -13,19 +13,21 @@ profile:
     <p>123 your address street</p>
     <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
-  enabled: true # includes a list of news items
+  enabled: false # includes a list of news items
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
+
+Senior studying Aeronautical and Astronautical Engineering at Purdue University. Highly creative and determined. I am a lifetime learner, self starter, and multidisciplinary. I have a wide array of skills in mechanical and electrical engineering in addition to aerospace. I'm interested in propulsion, avionics, and aero/astrodynamics. I had a previous internship at Komatsu Mining, and I am currently doing research with professor Keith LeGrand in the Purdue Department of Aeronautical and Astronautica Engineering. I have extracurricular experience leading a philosophy club, as well as working on liquid and hybrid rocket engines for Purdue Space Program and leading one of the top FIRST robotics teams in the world.
 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
