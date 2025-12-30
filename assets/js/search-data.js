@@ -49,19 +49,19 @@ ninja.data = [{
           description: "MATLAB–Python–Blender pipeline for rendering, data association, and evaluation of visual navigation algorithms",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_project/";
-            },},{id: "projects-project-3-with-very-long-name",
-          title: 'project 3 with very long name',
+            },},{id: "projects-hybrid-rocket-engine",
+          title: 'Hybrid Rocket Engine',
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
-            },},{id: "projects-project-4",
-          title: 'project 4',
-          description: "another without an image",
+            },},{id: "projects-partial-state-gaussian-mixture-fusion",
+          title: 'Partial State Gaussian Mixture Fusion',
+          description: "Multi-sensor probabilistic fusion using Gaussian mixture models",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
-            },},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
+            },},{id: "projects-",
+          title: '',
+          description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
             },},{id: "projects-project-6",
