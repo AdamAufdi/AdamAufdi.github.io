@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Hybrid Rocket Engine
-description: an ongoing propulsion/rocketry project
+description: a project that redirects to another website
 img: assets/img/19.jpg
 importance: 3
-category: work
+category: fun
 ---
 
 This is a group project I am carrying out with two others as an extension of Purdue Space Program. The project is in its preliminary phases, as we are sizing the parameters of the engine and beginning CAD work. The hotfire date is currently set for mid-April.
