@@ -1,15 +1,15 @@
 ---
 layout: page
 title: Hybrid Rocket Engine
-description: a project that redirects to another website
+description: a rocket engine currently in progress
 img: assets/img/19.jpg
-importance: 3
+importance: 5
 category: work
 ---
 
 This is a group project I am carrying out with two others as an extension of Purdue Space Program. The project is in its preliminary phases, as we are sizing the parameters of the engine and beginning CAD work. The hotfire date is currently set for mid-April.
 
-Required Components
+My responsibilities:
 Electrical
 Flow of propellants
 Remote controlled valves (ball valves)

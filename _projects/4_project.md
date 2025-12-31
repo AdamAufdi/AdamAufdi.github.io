@@ -3,7 +3,7 @@ layout: page
 title: Partial State Gaussian Mixture Fusion
 description: Multi-sensor probabilistic fusion using Gaussian mixture models
 img: assets/img/18.jpg
-importance: 3
+importance: 4
 category: work
 ---
 
