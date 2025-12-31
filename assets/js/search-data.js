@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "A growing collection of your cool projects.",
+          description: "Technical things I have made/worked on",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -51,7 +51,7 @@ ninja.data = [{
               window.location.href = "/projects/2_project/";
             },},{id: "projects-hybrid-rocket-engine",
           title: 'Hybrid Rocket Engine',
-          description: "a project that redirects to another website",
+          description: "a rocket engine currently in progress",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-partial-state-gaussian-mixture-fusion",
