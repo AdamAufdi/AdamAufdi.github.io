@@ -1,10 +1,10 @@
 ---
 layout: page
 title: Robotics
-description: Competitive robotics engineering: mechanical design, controls, and autonomous systems
+description: Competitive robotics engineering, mechanical design, controls, and autonomous systems
 img: assets/img/10.jpg
 importance: 3
-category: fun
+category: work
 ---
 
 ## Technical Overview
